@@ -1,0 +1,1 @@
+{"version":3,"sources":["Plants.css"],"names":[],"mappings":"AAAA,kBACE,eAAgB,CAChB,eACF","file":"main.5efd2a5c.chunk.css","sourcesContent":[".welcome-card img {\n  max-height: 35vh;\n  overflow: hidden;\n}\n"]}
