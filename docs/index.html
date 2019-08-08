@@ -1,12 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Ionic App</title>
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="/static/css/11.43c5a0f0.chunk.css" rel="stylesheet" />
+    <link href="/static/css/main.5efd2a5c.chunk.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Documentation for Plant Watch</h1>
+    <div id="root"></div>
+    <script>
+      !(function(o) {
+        function e(e) {
+          for (
+            var a, r, t = e[0], c = e[1], n = e[2], f = 0, d = [];
+            f < t.length;
+            f++
+          )
+            (r = t[f]), u[r] && d.push(u[r][0]), (u[r] = 0);
+          for (a in c)
+            Object.prototype.hasOwnProperty.call(c, a) && (o[a] = c[a]);
+          for (p && p(e); d.length; ) d.shift()();
+          return i.push.apply(i, n || []), b();
+        }
+        function b() {
+          for (var e, a = 0; a < i.length; a++) {
+            for (var r = i[a], t = !0, c = 1; c < r.length; c++) {
+              var n = r[c];
+              0 !== u[n] && (t = !1);
+            }
+            t && (i.splice(a--, 1), (e = l((l.s = r[0]))));
+          }
+          return e;
+        }
+        var r = {},
+          u = { 10: 0 },
+          i = [];
+        function l(e) {
+          if (r[e]) return r[e].exports;
+          var a = (r[e] = { i: e, l: !1, exports: {} });
+          return o[e].call(a.exports, a, a.exports, l), (a.l = !0), a.exports;
+        }
+        (l.e = function(n) {
+          var e = [],
+            r = u[n];
+          if (0 !== r)
+            if (r) e.push(r[2]);
+            else {
+              var a = new Promise(function(e, a) {
+                r = u[n] = [e, a];
+              });
+              e.push((r[2] = a));
+              var t,
+                f = document.createElement("script");
+              (f.charset = "utf-8"),
+                (f.timeout = 120),
+                l.nc && f.setAttribute("nonce", l.nc),
+                (f.src =
+                  l.p +
+                  "static/js/" +
+                  ({}[n] || n) +
+                  "." +
+                  {
+                    0: "104f5419",
+                    1: "442d7604",
+                    2: "2df469e2",
+                    3: "7a4e254c",
+                    4: "1efd0fc2",
+                    5: "fb837c13",
+                    6: "79678967",
+                    7: "82b79703",
+                    8: "1daefdbd",
+                    12: "a0d02244",
+                    13: "73a10723",
+                    14: "2dfa9c97",
+                    15: "d3455cd0",
+                    16: "23af3916",
+                    17: "23a4a51a",
+                    18: "7019c5d9",
+                    19: "5fed133a",
+                    20: "54324374",
+                    21: "b64d7a84",
+                    22: "4f78bb54",
+                    23: "f1aa866c",
+                    24: "2ff03eba",
+                    25: "b9773665",
+                    26: "c8861ea5",
+                    27: "8dc7083a",
+                    28: "13ef923a",
+                    29: "6ba3b8bd",
+                    30: "a921ef42",
+                    31: "15b380cc",
+                    32: "64fcb79f",
+                    33: "97a0ff8a",
+                    34: "749d61a9",
+                    35: "bee8687b",
+                    36: "bb0ae007",
+                    37: "52179adc",
+                    38: "19644e24",
+                    39: "914eab80",
+                    40: "33a103d0",
+                    41: "d1d6df33",
+                    42: "5bee5730",
+                    43: "d8d39a16",
+                    44: "3b422874",
+                    45: "26f6e1b0",
+                    46: "e7dcd273",
+                    47: "42ee5b47",
+                    48: "ba8cb9d3",
+                    49: "ea3d2e8c",
+                    50: "ae47deeb",
+                    51: "ec0672c9",
+                    52: "0f323cd7",
+                    53: "39bfb6fe",
+                    54: "37618658",
+                    55: "6ba18ea7",
+                    56: "ab463e0b",
+                    57: "ff73ca08",
+                    58: "98486cbf",
+                    59: "4d6b820d",
+                    60: "efcc1639",
+                    61: "8c7ee694",
+                    62: "147ade19",
+                    63: "5cd04dc1",
+                    64: "216849fb",
+                    65: "93eb260d",
+                    66: "2a279bc9",
+                    67: "4fc3d05c",
+                    68: "4887b22d",
+                    69: "2f9e160b",
+                    70: "3f780fff",
+                    71: "b8baf6db",
+                    72: "9083260b",
+                    73: "4a8d732d",
+                    74: "2e1bc11b",
+                    75: "f948970f",
+                    76: "55e16906",
+                    77: "6e4f3a0a",
+                    78: "8dacbf94",
+                    79: "fe7b4b80",
+                    80: "7509311a",
+                    81: "b6396ab9",
+                    82: "4d75aeb0",
+                    83: "3b855a56",
+                    84: "1bd34c47",
+                    85: "9b6695fe",
+                    86: "4e1c73c5",
+                    87: "b68bcee0",
+                    88: "0d5c17d5",
+                    89: "fbb2d02c",
+                    90: "9a75987c",
+                    91: "9161bdf3",
+                    92: "d088dccb",
+                    93: "7bc2ffcc",
+                    94: "a3230b3d",
+                    95: "309a88e2",
+                    96: "a1de5c9d",
+                    97: "68864d74",
+                    98: "cc968783",
+                    99: "706a474a",
+                    100: "f156d1a0",
+                    101: "044cc75c"
+                  }[n] +
+                  ".chunk.js"),
+                (t = function(e) {
+                  (f.onerror = f.onload = null), clearTimeout(d);
+                  var a = u[n];
+                  if (0 !== a) {
+                    if (a) {
+                      var r = e && ("load" === e.type ? "missing" : e.type),
+                        t = e && e.target && e.target.src,
+                        c = new Error(
+                          "Loading chunk " +
+                            n +
+                            " failed.\n(" +
+                            r +
+                            ": " +
+                            t +
+                            ")"
+                        );
+                      (c.type = r), (c.request = t), a[1](c);
+                    }
+                    u[n] = void 0;
+                  }
+                });
+              var d = setTimeout(function() {
+                t({ type: "timeout", target: f });
+              }, 12e4);
+              (f.onerror = f.onload = t), document.head.appendChild(f);
+            }
+          return Promise.all(e);
+        }),
+          (l.m = o),
+          (l.c = r),
+          (l.d = function(e, a, r) {
+            l.o(e, a) ||
+              Object.defineProperty(e, a, { enumerable: !0, get: r });
+          }),
+          (l.r = function(e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (l.t = function(a, e) {
+            if ((1 & e && (a = l(a)), 8 & e)) return a;
+            if (4 & e && "object" == typeof a && a && a.__esModule) return a;
+            var r = Object.create(null);
+            if (
+              (l.r(r),
+              Object.defineProperty(r, "default", { enumerable: !0, value: a }),
+              2 & e && "string" != typeof a)
+            )
+              for (var t in a)
+                l.d(
+                  r,
+                  t,
+                  function(e) {
+                    return a[e];
+                  }.bind(null, t)
+                );
+            return r;
+          }),
+          (l.n = function(e) {
+            var a =
+              e && e.__esModule
+                ? function() {
+                    return e.default;
+                  }
+                : function() {
+                    return e;
+                  };
+            return l.d(a, "a", a), a;
+          }),
+          (l.o = function(e, a) {
+            return Object.prototype.hasOwnProperty.call(e, a);
+          }),
+          (l.p = "/"),
+          (l.oe = function(e) {
+            throw (console.error(e), e);
+          });
+        var a = (window.webpackJsonp = window.webpackJsonp || []),
+          t = a.push.bind(a);
+        (a.push = e), (a = a.slice());
+        for (var c = 0; c < a.length; c++) e(a[c]);
+        var p = t;
+        b();
+      })([]);</script
+    ><script src="/static/js/11.7c088f6b.chunk.js"></script
+    ><script src="/static/js/main.d048fdf1.chunk.js"></script>
   </body>
 </html>
