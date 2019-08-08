@@ -1,5 +1,5 @@
 {
-  "appId": "plant watch",
+  "appId": "com.example.app",
   "appName": "plantwatch",
   "bundledWebRuntime": false,
   "npmClient": "npm",
