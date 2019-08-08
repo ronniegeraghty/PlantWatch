@@ -8,6 +8,6 @@ git commit -m "$commitText"
 echo "Pushing to master branch"
 git push origin master
 echo "Running predeploy"
-npm run prebuild
+npm run predeploy
 echo "Runnig Deploy"
 npm run deploy
