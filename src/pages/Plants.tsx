@@ -33,7 +33,9 @@ const Plants: React.FunctionComponent = () => {
                   <IonCardHeader>
                     <IonCardTitle>Plant 1</IonCardTitle>
                   </IonCardHeader>
-                  <IonCardContent>{/*<PlantGraph />*/}</IonCardContent>
+                  <IonCardContent>
+                    <PlantGraph />
+                  </IonCardContent>
                 </IonCard>
               </IonCol>
             </IonRow>
