@@ -1,6 +1,6 @@
 {
-  "appId": "HomeControl",
-  "appName": "HomeControl",
+  "appId": "plant watch",
+  "appName": "plantwatch",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build"

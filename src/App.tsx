@@ -46,7 +46,11 @@ const App: React.FunctionComponent = () => (
             <Route exact path="/" render={() => <Redirect to="/Plants" />} />
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
-            <IonTabButton tab="Plants" href="/Plants">
+            <IonTabButton
+              tab="Plants"
+              href="/Plants"
+              style={{ color: "green" }}
+            >
               <IonIcon icon={leaf} />
               <IonLabel>Plants</IonLabel>
             </IonTabButton>

@@ -1,5 +1,5 @@
 {
-  "name": "PlantWatch",
+  "name": "plantwatch",
   "version": "0.0.1",
   "private": true,
   "homepage": "https://ronniegeraghty.github.io/PlantWatch/",
@@ -14,9 +14,11 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-router": "^4.4.4",
     "@types/react-router-dom": "^4.3.1",
+    "chart.js": "^2.8.0",
     "gh-pages": "^2.1.1",
     "ionicons": "^4.6.2",
     "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
