@@ -1,0 +1,7 @@
+{
+  "name": "HomeControl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
