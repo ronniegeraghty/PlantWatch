@@ -11,8 +11,8 @@ import {
   IonTabs
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { apps, send, leaf } from "ionicons/icons";
-import Tab1 from "./pages/Tab1";
+import { addCircle, person, leaf } from "ionicons/icons";
+import Plants from "./pages/Plants";
 import Tab2 from "./pages/Tab2";
 import Tab3 from "./pages/Tab3";
 import Details from "./pages/Details";
@@ -39,24 +39,24 @@ const App: React.FunctionComponent = () => (
       <IonPage id="main">
         <IonTabs>
           <IonRouterOutlet>
-            <Route path="/:tab(tab1)" component={Tab1} exact={true} />
+            <Route path="/:tab(Plants)" component={Plants} exact={true} />
             <Route path="/:tab(tab2)" component={Tab2} exact={true} />
             <Route path="/:tab(tab2)/details" component={Details} />
             <Route path="/:tab(tab3)" component={Tab3} />
-            <Route exact path="/" render={() => <Redirect to="/tab1" />} />
+            <Route exact path="/" render={() => <Redirect to="/Plants" />} />
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
-            <IonTabButton tab="tab1" href="/tab1">
+            <IonTabButton tab="Plants" href="/Plants">
               <IonIcon icon={leaf} />
-              <IonLabel>Tab One</IonLabel>
+              <IonLabel>Plants</IonLabel>
             </IonTabButton>
             <IonTabButton tab="tab2" href="/tab2">
-              <IonIcon icon={apps} />
-              <IonLabel>Tab Two</IonLabel>
+              <IonIcon icon={addCircle} />
+              <IonLabel>Add Plant</IonLabel>
             </IonTabButton>
             <IonTabButton tab="tab3" href="/tab3">
-              <IonIcon icon={send} />
-              <IonLabel>Tab Three</IonLabel>
+              <IonIcon icon={person} />
+              <IonLabel>Profile</IonLabel>
             </IonTabButton>
           </IonTabBar>
         </IonTabs>

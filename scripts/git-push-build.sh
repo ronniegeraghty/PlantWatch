@@ -11,7 +11,3 @@ read branch
 git push origin $branch
 echo "Running Build"
 npm run build 
-echo "Running predeploy"
-npm run predeploy
-echo "Runnig Deploy"
-npm run deploy
