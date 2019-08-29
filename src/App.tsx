@@ -11,27 +11,27 @@ import {
   IonTabs
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { addCircle, leaf, person } from "ionicons/icons";
+import { addCircle, person, leaf } from "ionicons/icons";
 import Plants from "./pages/Plants";
-import AddDevice from "./pages/AddDevice";
+import AddPlant from "./pages/AddPlant";
 import Profile from "./pages/Profile";
 import Details from "./pages/Details";
 
 /* Core CSS required for Ionic components to work properly */
-import "@ionic/core/css/core.css";
+import "@ionic/react/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
-import "@ionic/core/css/normalize.css";
-import "@ionic/core/css/structure.css";
-import "@ionic/core/css/typography.css";
+import "@ionic/react/css/normalize.css";
+import "@ionic/react/css/structure.css";
+import "@ionic/react/css/typography.css";
 
 /* Optional CSS utils that can be commented out */
-import "@ionic/core/css/padding.css";
-import "@ionic/core/css/float-elements.css";
-import "@ionic/core/css/text-alignment.css";
-import "@ionic/core/css/text-transformation.css";
-import "@ionic/core/css/flex-utils.css";
-import "@ionic/core/css/display.css";
+import "@ionic/react/css/padding.css";
+import "@ionic/react/css/float-elements.css";
+import "@ionic/react/css/text-alignment.css";
+import "@ionic/react/css/text-transformation.css";
+import "@ionic/react/css/flex-utils.css";
+import "@ionic/react/css/display.css";
 
 const App: React.FunctionComponent = () => (
   <IonApp>
@@ -40,23 +40,19 @@ const App: React.FunctionComponent = () => (
         <IonTabs>
           <IonRouterOutlet>
             <Route path="/:tab(Plants)" component={Plants} exact={true} />
-            <Route path="/:tab(AddDevice)" component={AddDevice} exact={true} />
-            <Route path="/:tab(AddDevice)/details" component={Details} />
+            <Route path="/:tab(AddPlant)" component={AddPlant} exact={true} />
+            <Route path="/:tab(AddPlant)/details" component={Details} />
             <Route path="/:tab(Profile)" component={Profile} />
             <Route exact path="/" render={() => <Redirect to="/Plants" />} />
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
-            <IonTabButton
-              tab="Plants"
-              href="/Plants"
-              style={{ color: "green" }}
-            >
+            <IonTabButton tab="Plants" href="/Plants">
               <IonIcon icon={leaf} />
               <IonLabel>Plants</IonLabel>
             </IonTabButton>
-            <IonTabButton tab="AddDevice" href="/AddDevice">
+            <IonTabButton tab="AddPlant" href="/AddPlant">
               <IonIcon icon={addCircle} />
-              <IonLabel>Add Device</IonLabel>
+              <IonLabel>Add Plant</IonLabel>
             </IonTabButton>
             <IonTabButton tab="Profile" href="/Profile">
               <IonIcon icon={person} />
