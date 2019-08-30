@@ -12,7 +12,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { addCircle, person, leaf } from "ionicons/icons";
-import Plants from "./pages/Plants";
+import Plants from "./pages/Plants/Plants";
 import AddPlant from "./pages/AddPlant";
 import Profile from "./pages/Profile";
 import Details from "./pages/Details";

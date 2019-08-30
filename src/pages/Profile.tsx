@@ -6,7 +6,7 @@ const Tab3Page: React.FunctionComponent = () => {
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab Three</IonTitle>
+          <IonTitle>Profile</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent />
