@@ -45,7 +45,7 @@ const App: React.FunctionComponent = () => (
             <Route path="/:tab(Profile)" component={Profile} />
             <Route exact path="/" render={() => <Redirect to="/Plants" />} />
           </IonRouterOutlet>
-          <IonTabBar slot="bottom">
+          <IonTabBar slot="bottom" color="success">
             <IonTabButton tab="Plants" href="/Plants">
               <IonIcon icon={leaf} />
               <IonLabel>Plants</IonLabel>
