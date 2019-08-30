@@ -1,7 +1,8 @@
 {
   "name": "plantwatch",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "react"
 }

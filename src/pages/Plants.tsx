@@ -23,7 +23,7 @@ const Plants: React.FunctionComponent = () => {
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab One</IonTitle>
+          <IonTitle>Plants</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>

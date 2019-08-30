@@ -11,6 +11,10 @@
 # production
 /build
 /ios
+/platforms
+/plugins
+/resources
+/www
 
 # misc
 .DS_Store
