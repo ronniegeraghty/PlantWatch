@@ -13,9 +13,8 @@ import {
 import { IonReactRouter } from "@ionic/react-router";
 import { addCircle, person, leaf } from "ionicons/icons";
 import Plants from "./pages/Plants/Plants";
-import AddPlant from "./pages/AddPlant";
-import Profile from "./pages/Profile";
-import Details from "./pages/Details";
+import AddPlant from "./pages/AddPlant/AddPlant";
+import Profile from "./pages/Profile/Profile";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -41,7 +40,6 @@ const App: React.FunctionComponent = () => (
           <IonRouterOutlet>
             <Route path="/:tab(Plants)" component={Plants} exact={true} />
             <Route path="/:tab(AddPlant)" component={AddPlant} exact={true} />
-            <Route path="/:tab(AddPlant)/details" component={Details} />
             <Route path="/:tab(Profile)" component={Profile} />
             <Route exact path="/" render={() => <Redirect to="/Plants" />} />
           </IonRouterOutlet>

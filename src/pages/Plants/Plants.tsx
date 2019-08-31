@@ -40,20 +40,6 @@ class Plants extends React.Component<Plant, State> {
     UVLvl: 75
   };
 
-  state: State = {
-    showToast: false
-  };
-
-  showToastFalse() {
-    this.state.showToast = false;
-  }
-  showToastTrue() {
-    console.log("TRUE!!!!");
-    this.setState({
-      showToast: true
-    });
-  }
-
   render() {
     return (
       <>
@@ -70,39 +56,6 @@ class Plants extends React.Component<Plant, State> {
             </IonCardHeader>
             <IonCardContent></IonCardContent>
           </IonCard>
-          <IonButton
-            color="success"
-            size="large"
-            fill="outline"
-            strong={true}
-            onClick={this.showToastTrue}
-          >
-            Test
-            <IonIcon icon={send} className="btn-icon"></IonIcon>
-          </IonButton>
-          <IonToast
-            isOpen={this.state.showToast}
-            onDidDismiss={this.showToastFalse}
-            message="Click to Close"
-            position="top"
-            buttons={[
-              {
-                side: "start",
-                icon: "star",
-                text: "Favorite",
-                handler: () => {
-                  console.log("Favorite clicked");
-                }
-              },
-              {
-                text: "Done",
-                role: "cancel",
-                handler: () => {
-                  console.log("Cancel Clicked");
-                }
-              }
-            ]}
-          />
         </IonContent>
       </>
     );
